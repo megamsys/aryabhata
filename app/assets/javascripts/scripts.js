@@ -52,7 +52,6 @@ jQuery(function($) {
 */
 jQuery(function($) {
 var percentage = $('.progress .bar').attr("data-percentage");
-console.log("percentage is " +percentage)
 $('.progress .bar').animate({width: (percentage)+'%'}, 1000);
 });
 
