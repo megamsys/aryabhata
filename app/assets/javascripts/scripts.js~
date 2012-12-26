@@ -68,7 +68,7 @@ jQuery(document).ready(function() {
         var postdata = $('.subscription-form-container form').serialize();
         $.ajax({
             type: 'POST',
-            url: '/mail_register',
+            url: '/home/mail_register',
             data: postdata,
             dataType: 'json',
             success: function(json) {

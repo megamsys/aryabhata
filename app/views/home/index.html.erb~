@@ -44,6 +44,7 @@
 <%= form_tag "/home/mail_register" do %>
  <%= text_field_tag :email %>
 <%= submit_tag("Register") %>
+<%= link_to "Register", mail_register_path, :class => 'submit btn btn-large btn-primary' %>
 
 <% end %>
 
