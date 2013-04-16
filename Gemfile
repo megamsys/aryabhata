@@ -10,7 +10,7 @@ gem 'libv8', '~> 3.11.8.4', :platform => :ruby
 #gem "therubyracer"
 gem "therubyracer", :require => 'v8',:platforms => :ruby
 gem 'gibbon', '~> 0.4.2'
-#gem 'rdoc-data', '~> 3.12'
+gem 'rdoc-data'#, '~> 3.12'
 
 # Gems used only for assets and not required
 # in production environments by default.
