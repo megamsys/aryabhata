@@ -1,13 +1,12 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
-gem 'rake', '~> 10.0.4'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
 gem 'less-rails', '~> 2.2.6'
-#gem 'libv8', '~> 3.11.8.4', :platform => :ruby
+gem 'libv8', '~> 3.11.8.4', :platform => :ruby
 #gem "therubyracer"
 gem "therubyracer", :require => 'v8',:platforms => :ruby
 gem 'gibbon', '~> 0.4.2'
