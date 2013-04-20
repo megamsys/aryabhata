@@ -137,6 +137,7 @@ DEPENDENCIES
   less-rails (~> 2.2.6)
   libv8 (~> 3.11.8.4)
   rails (= 3.2.13)
+  rake (~> 10.0.4)
   sass-rails (~> 3.2.6)
   therubyracer
   twitter-bootstrap-rails

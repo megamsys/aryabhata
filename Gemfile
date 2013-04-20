@@ -6,6 +6,7 @@ gem 'rails', '3.2.13'
 
 #gem 'sqlite3'
 #gem "mysql2", "~> 0.3.11"
+gem 'rake', '~> 10.0.4'
 gem 'less-rails', '~> 2.2.6'
 gem 'libv8', '~> 3.11.8.4', :platform => :ruby
 #gem "therubyracer"
