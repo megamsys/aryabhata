@@ -223,8 +223,8 @@ h1 {
 
 .subscription-form-container input {
     padding: 10px 27px;
-    background: #2d2d2d; /* browsers that don't support rgba */
-    background: rgba(45,45,45,.7);
+    /*background: #2d2d2d;  browsers that don't support rgba 81		60	10	79*/
+    background: rgb(24,0,0) ;
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
     font-size: 18px;
     font-style: italic;

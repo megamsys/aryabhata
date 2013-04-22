@@ -1,24 +1,30 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.8'
-
+gem 'rails', '3.2.13'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+#gem 'sqlite3'
+#gem "mysql2", "~> 0.3.11"
+gem 'rake', '~> 10.0.4'
 gem 'less-rails', '~> 2.2.6'
 gem 'libv8', '~> 3.11.8.4', :platform => :ruby
-gem "therubyracer"
+#gem "therubyracer"
+gem "therubyracer", :require => 'v8',:platforms => :ruby
+gem 'gibbon', '~> 0.4.2'
+gem 'unicorn'
+gem 'google-analytics-rails', '~> 0.0.4'
+#gem 'rdoc-data'#, '~> 3.12'
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
+  gem 'sass-rails',   '~> 3.2.6'
+  gem 'coffee-rails', '~> 3.2.2'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   gem 'twitter-bootstrap-rails'
-  gem 'uglifier', '>= 1.0.3'
+  gem 'uglifier', '>= 1.3.0'
 end
 
 gem 'jquery-rails'
