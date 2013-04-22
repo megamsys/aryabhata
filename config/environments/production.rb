@@ -4,6 +4,11 @@ ComingSoon::Application.configure do
   # Code is not reloaded between requests
   config.cache_classes = true
 
+# replace this with your tracker code
+  GA.tracker = "UA-40323851-1"
+GA.script_source = "('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js'"
+
+
   # Full error reports are disabled and caching is turned on
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
