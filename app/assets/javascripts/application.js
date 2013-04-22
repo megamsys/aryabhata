@@ -19,8 +19,9 @@
 //= require jquery.backstretch.min
 //= require backstretch-init
 //= require jquery.tweet
+//= require jquery.spin.config
 
-$('.register-bt').click(function (e) {
-    $('#basic-modal-content').modal();
-    return false;
-});
+
+
+
+
