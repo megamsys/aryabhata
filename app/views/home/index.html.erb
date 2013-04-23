@@ -1,7 +1,10 @@
 <div class="page-container container-fluid">
-
+   <div class="m-navbar-inner">
+		<div class="container">
+    <%= image_tag "logo-megam160x43.png", :alt => "Megam", :class => "megam_image" %>
 	<h1>Megam Systems</h1>
-
+    </div>
+    </div>
 	<div class="progress">
 		<div class="bar" style="width: 0%;" data-percentage="80">
 			<div>
@@ -45,7 +48,8 @@
 	<div class="subscription-form-container row-fluid">
 		<h2>Subscribe</h2>
 
-		<%= render :partial => "home/setup_mail" %>
+		<%= render :partial => "home/setup_mail"%>
+		
 	</div>
 	<!-- Button to trigger modal -->
 	<!-- Modal -->
