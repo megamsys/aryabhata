@@ -12,11 +12,12 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.spin.config
 //= require twitter/bootstrap
 //= require_tree .
 //= require scripts
 //= require jquery.countdown
-//= require jquery.backstretch.min
+//= require jquery.backstretch
 //= require backstretch-init
 //= require jquery.tweet
 
@@ -34,3 +35,4 @@ $(function() {
         });
     });
 });
+

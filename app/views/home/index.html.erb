@@ -1,61 +1,74 @@
-       
-        <div class="page-container container-fluid">
+<div class="page-container container-fluid">
 
-            <h1>Megam Systems</h1>
+	<h1>Megam Systems</h1>
 
-            <div class="progress">
-                <div class="bar" style="width: 0%;" data-percentage="80">
-                    <div>80%</div>
-                </div>
-            </div>
+	<div class="progress">
+		<div class="bar" style="width: 0%;" data-percentage="80">
+			<div>
+				80%
+			</div>
+		</div>
+	</div>
 
-            <div class="timer-container row-fluid">
-                <div class="span2"></div>
-                <div class="span8">
-                    <div class="timer">
-                        <span class="days"></span> DAYS
-                        <span class="hours"></span> HOURS
-                        <span class="minutes"></span> MINUTES
-                        <span class="seconds"></span> SECONDS
-                    </div>
-                    <p>Are you tired of setting up cloud identity ?. Integration to Cloud Application is a pain ? You are at the right spot. Our company stands by opensource and will launch for Free.<br>
-                    Enter your email in the form below and we’ll notify you as soon as we’re ready.</p>
-                </div>
+	<div class="timer-container row-fluid">
+		<div class="span2"></div>
+		<div class="span8">
+			<div class="timer">
+				<span class="days"></span> DAYS <span class="hours"></span> HOURS <span class="minutes"></span> MINUTES <span class="seconds"></span> SECONDS
+			</div>
+			<p>
+				Are you tired of setting up cloud identity ?. Integration to Cloud Application is a pain ? You are at the right spot. Our company stands by opensource and will launch for Free.
+				<br>
+				Enter your email in the text box and we’ll notify you as soon as we’re ready.
+			</p>
+		</div>
 
-                <div class="span2"></div>
-            </div>
-            <div class="social-container row-fluid">
-                <div class="span2"></div>
-                <div class="tweets span6">
-                    <div class="show-tweets"></div>
-                </div>
-                <div class="social-links span2">
-                    <a class="facebook" href="http://www.facebook.com/megamsys " target="_blank"></a>
-                    <a class="twitter" href="https://twitter.com/indykish" target="_blank"></a>
-                    <a class="pinterest" href="https://pinterest.com/megamsys" target="_blank"></a>
-                    <a class="github" href="https:/github.com/indykish" target="_blank"></a>
-                    <a class="blogger" href="http://blog.megam.co/" target="_blank"></a>
-                </div>
-                <div class="span2"></div>
-            </div>
-
-            <div class="subscription-form-container row-fluid">
-                <h2>Subscribe</h2>
-               
-<%= text_field_tag 'email' %>
-<%= link_to "Register" , mail_register_path(@some_value), :class => "btn btn-large", :id => 'mail', :remote => true, data: { spinner: '#spin_mail_reg'} %>
-
-<!--
- <%= text_field_tag(:email) %> 
-<%= link_to "Register", mail_register_path(:email => @email), :class => "btn btn-primary", :type => "submit", :method => :post, :remote => true, data: { spinner: '#spin_mail_reg'}  %>
-
--->
+		<div class="span2"></div>
+	</div>
 
 
-                <div class="success-message"></div>
-                <div class="error-message"></div>
-            </div>
-        </div>
+	<div class="social-container row-fluid">
+		<div class="span2"></div>
+		<div class="tweets span6">
+			<div class="show-tweets"></div>
+		</div>
+		<div class="social-links span2">
+			<a class="facebook" href="http://www.facebook.com/megamsys " target="_blank"></a>
+			<a class="twitter" href="https://twitter.com/indykish" target="_blank"></a>
+			<a class="pinterest" href="https://pinterest.com/megamsys" target="_blank"></a>
+			<a class="github" href="https:/github.com/indykish" target="_blank"></a>
+			<a class="blogger" href="http://blog.megam.co/" target="_blank"></a>
+		</div>
+		<div class="span2"></div>
+	</div>
 
+	<div class="subscription-form-container row-fluid">
+		<h2>Subscribe</h2>
 
+		<%= render :partial => "home/setup_mail" %>
+	</div>
+	<!-- Button to trigger modal -->
+	<!-- Modal -->
+	<div id="postfinish_popup" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+				×
+			</button>
+			<h3 id="myModalLabel">Modal header</h3>
+		</div>
+		<div class="modal-body">
+			<p>
+				One fine body…
+			</p>
+		</div>
+		<div class="modal-footer">
+			<button class="btn" data-dismiss="modal" aria-hidden="true">
+				Close
+			</button>
+			<button class="btn btn-primary">
+				Save changes
+			</button>
+		</div>
+	</div>
+</div>
 
