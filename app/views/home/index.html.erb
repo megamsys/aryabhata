@@ -42,28 +42,20 @@
             <div class="subscription-form-container row-fluid">
                 <h2>Subscribe</h2>
                
+<%= text_field_tag 'email' %>
+<%= link_to "Register" , mail_register_path(@some_value), :class => "btn btn-large", :id => 'mail', :remote => true, data: { spinner: '#spin_mail_reg'} %>
 
-<%= form_tag "/home/mail_register" do %>
- <%= text_field_tag :update, :email %>
-<%= submit_tag("Register", :class => "register-bt") %>
-<% end %>
+<!--
+ <%= text_field_tag(:email) %> 
+<%= link_to "Register", mail_register_path(:email => @email), :class => "btn btn-primary", :type => "submit", :method => :post, :remote => true, data: { spinner: '#spin_mail_reg'}  %>
+
+-->
+
 
                 <div class="success-message"></div>
                 <div class="error-message"></div>
             </div>
         </div>
-<div id="basic-modal-content">
-<div class="modal-header">
-<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-<h3 id="myModalLabel">Modal header</h3>
-</div>
-<div class="modal-body">
-<p>One fine body…</p>
-</div>
-<div class="modal-footer">
-<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-<button class="btn btn-primary">Save changes</button>
-</div>
-</div>
+
 
 

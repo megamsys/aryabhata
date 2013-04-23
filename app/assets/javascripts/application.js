@@ -20,7 +20,17 @@
 //= require backstretch-init
 //= require jquery.tweet
 
-$('.register-bt').click(function (e) {
-    $('#basic-modal-content').modal();
-    return false;
+$(function() {
+    // Add click event binding to `Save search` link
+    $("#mail").on("click", function(event) {
+        event.preventDefault(); // don't trigger default
+
+        // get the value inside the text field
+        var name = $("#email").val();
+
+        $.post('/mail_register', { email: name }, function(data) {
+            // log the result from the server, or whatever...
+            console.log(data);
+        });
+    });
 });
