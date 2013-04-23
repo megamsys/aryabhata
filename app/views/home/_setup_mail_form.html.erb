@@ -1,4 +1,3 @@
-<%= form_tag("/home/mail_register",:method => "post", data: { spinner: '#spin_create_identity', :remote => true}, :id => 'form_setup_identity') do %>
  <%= text_field_tag :email %>
-<%= submit_tag("Register", :class => "register-bt", :remote => true) %>
-<% end %>
+
+<%= link_to "Register", "/mail_register", class: "btn btn-primary", :method => :post, :remote => true, data: { spinner: '#spin_mail_reg'}  %>

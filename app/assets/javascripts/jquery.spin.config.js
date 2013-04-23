@@ -6,13 +6,13 @@ jQuery(document)
 					// provided by Rails's jquery-ujs driver.
 					// ajax:complete => after the request has been completed, no
 					// matter what outcome
+
 					jQuery("*[data-spinner]")
 							.on('ajax:beforeSend', function(e) {
 								/*
 								 * Whoever has data-spinner will get toggled. On
 								 * success/error. This is retoggled back.
 								 */
-								alert("entry1");
 								$(this).toggle();
 								$($(this).data('spinner')).show();
 								console.log('started - before stop props');
@@ -21,12 +21,10 @@ jQuery(document)
 								// parent elements.
 							})
 							.on("ajax:success", function(xhr, data, status) {
-								alert("entry2");
 								console.log('success');
 								return false;
 							})
 							.on("ajax:complete", function(xhr, status) {
-								alert("entry3");
 								$($(this).data('spinner')).hide();
 								console.log('complete');
 								return false;
@@ -34,7 +32,6 @@ jQuery(document)
 							.on(
 									"ajax:error",
 									function(xhr, status, error) {
-										alert("entry4");
 										console.log('error ' + error
 												+ "status=" + status);
 										var errorStr = "An error occurred when the attemping an ajax request. [status :"
