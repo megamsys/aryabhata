@@ -1,4 +1,6 @@
+<%= text_field_tag 'email' %>
+<%= link_to "Register" , mail_register_path(@some_value), :class => "btn btn-large", :id => 'mail', :remote => true, data: { spinner: '#spin_mail_reg'} %>
 
- <%= text_field_tag :email %>
 
-<%= link_to "Register", "/mail_register", class: "btn btn-primary", :method => :post, :remote => true, data: { spinner: '#spin_mail_reg'}  %>
+
+
