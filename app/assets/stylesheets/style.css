@@ -31,6 +31,29 @@ h1 {
     text-shadow: 0 2px 6px rgba(0,0,0,.2);
 }
 
+/* -----------Modal---------------*/
+
+.modal-header {
+    background: url(nine.png)
+}
+
+.modal-footer {
+    background: url(nine.png)
+}
+
+/* -----------nav-bar---------------*/
+.navbar-inner{
+  background: url(nine.png);
+}
+
+#megam-head {
+	color: #580000 ;
+}
+
+#megam-subscribe {
+	color: #FFFF00 ;
+}
+
 
 /* ----- Progress bar ----- */
 
@@ -71,7 +94,7 @@ h1 {
 
 .timer-container {
     margin: 0;
-    padding: 40px 0;
+    padding: 30px 0;
     background: #2d2d2d; /* browsers that don't support rgba */
     background: rgba(45,45,45,.7);
     font-size: 18px;
@@ -222,13 +245,11 @@ h1 {
 }
 
 .subscription-form-container input {
-    padding: 10px 27px;
-    /*background: #2d2d2d;  browsers that don't support rgba 81		60	10	79*/
-    background: rgb(24,0,0) ;
+    padding: 5px 10px 8px 4px;
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
     font-size: 18px;
     font-style: italic;
-    color: #fff;
+
     text-shadow: 0 1px 4px rgba(0,0,0,.2);
     border: 0;
     -moz-border-radius: 0;
