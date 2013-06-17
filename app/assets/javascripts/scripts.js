@@ -3,7 +3,7 @@
 */
 jQuery(function($) {
     var now = new Date();
-	var countTo = "2013/06/17"
+	var countTo = "2013/07/02"
     $('.timer').countdown(countTo, function(event) {
         var $this = $(this);
         switch(event.type) {
