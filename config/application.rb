@@ -3,7 +3,7 @@ require File.expand_path('../boot', __FILE__)
 #require 'rails/all'
 require "action_controller/railtie"
 require "action_mailer/railtie"
-require "active_resource/railtie"
+#require "active_resource/railtie"
 require "rails/test_unit/railtie"
 require "sprockets/railtie"
 
@@ -63,5 +63,9 @@ module ComingSoon
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+    # 404 catcher
+    config.after_initialize do |app|
+      app.routes.append{ match '*a', :to => 'application#render_404' } unless config.consider_all_requests_local
+    end
   end
 end

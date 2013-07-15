@@ -17,7 +17,7 @@
 //= require_tree .
 //= require scripts
 //= require jquery.countdown
-//= require jquery.backstretch
+//= require backstretch
 //= require backstretch-init
 //= require jquery.tweet
 
