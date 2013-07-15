@@ -10,7 +10,7 @@ gem 'rails-observers'
 gem 'actionpack-page_caching'
 gem 'actionpack-action_caching'
 #this needs to be remove. verify it
-#gem 'rake'
+gem 'rake', '~> 10.1.0'
 gem 'unicorn'
 
 # Gems used only for assets and not required
