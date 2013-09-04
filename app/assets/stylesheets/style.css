@@ -34,16 +34,16 @@ h1 {
 /* -----------Modal---------------*/
 
 .modal-header {
-    background: url(nine.png)
+background: url('nine.png');
 }
 
 .modal-footer {
-    background: url(nine.png)
+background: url('nine.png');
 }
 
 /* -----------nav-bar---------------*/
 .navbar-inner{
-  background: url(nine.png);
+background: url('nine.png');
 }
 
 #megam-head {
@@ -190,7 +190,7 @@ h1 {
 
 .social-links a { display: inline-block; width: 24px; height: 24px; margin: 3px 0 0 8px; vertical-align: middle; }
 
-.social-links a.twitter { background: url(twitter.png) left top no-repeat; }
+.social-links a.twitter { background: url('twitter.png') left top no-repeat; }
 .social-links a.dribbble { background: url(dribbble.png) left top no-repeat; }
 .social-links a.rss { background: url(rss.png) left top no-repeat; }
 .social-links a.pinterest { background: url(pinterest.png) left top no-repeat; }
